@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.zahra.guided4a;
+package com.zahra.guided5;
 
 /**
  *
@@ -11,11 +11,10 @@ package com.zahra.guided4a;
  */
 public class Main {
     public static void main(String[] args) {
-       Child c = new Child();
-       c.talk();
-       c.name = "Merlin";
-       c.talk();
-
+       Chef chef = new Chef("Lily");
+       
+       Chef.cook();
+       Chef.cook("Beef Steak");
     }
     
 }

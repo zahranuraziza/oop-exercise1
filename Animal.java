@@ -3,36 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.zahra.guided4b;
+package com.zahra.guided5;
 
 /**
  *
  * @author USER
  */
 public class Animal {
-    private String name;
- 
-    public Animal(String name){
-        this.name = name;
-    }
- 
-    public String getName(){ 
-        return name;
-    }
- 
-    public String getType(){
-        return "Unknown Animal";
-    }
- 
-    public String playSound(){
-        return "Error : Unknown animal type!";
-    }
- 
-    public void showProfile(){
-        System.out.println("Name: " + getName());
-        System.out.println("Type: " + getType());
-        System.out.println("Sound: " + playSound());
-        System.out.println();
-    }
+    public void name(){
+    System.out.println("There are many kind of animal.");
+}
 
 }

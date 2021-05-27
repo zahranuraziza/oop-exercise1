@@ -3,22 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.zahra.guided4b;
+package com.zahra.guided5;
 
 /**
  *
  * @author USER
  */
 public class Cat extends Animal {
-    public Cat(String name) {
-        super(name);
-    }
- 
-    public String getType() {
-        return "Cat";
-    }
+    public void name(){
+    System.out.println("Cat is one of animal name.");
+}
 
-    public String playSound() {
-        return "Meow~!";
-    }
 }

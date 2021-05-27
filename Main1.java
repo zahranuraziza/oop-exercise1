@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.zahra.guided4b;
+package com.zahra.guided5;
 
 /**
  *
@@ -11,17 +11,13 @@ package com.zahra.guided4b;
  */
 public class Main1 {
     public static void main(String[] args) {
-        // Object constructor
-        Animal animal = new Animal("An animal");
-        Cat cat = new Cat("Lucas");
-        Dog dog = new Dog("Sebastian");
-        Rabbit rabbit = new Rabbit("Mina");
- 
-        // Outputs
-        animal.showProfile();
-        cat.showProfile();
-        dog.showProfile();
-        rabbit.showProfile();
+      Animal a = new Animal();
+      Animal b = new Cat();
+
+      // Call method in Animal class
+      a.name();
+      // Call method in Cat class
+      b.name();
     }
     
 }
