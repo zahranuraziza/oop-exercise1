@@ -3,18 +3,30 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.zahra.guided5;
+package com.zahra.unguided2;
+
+
+import java.util.Scanner;
 
 /**
  *
  * @author USER
  */
 public class Main {
-    public static void main(String[] args) {
-       Chef chef = new Chef("Lily");
+public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("Input birth year: ");
+        int birthYear = input.nextInt();
+        
+        System.out.print("Input current year: ");
+        int currentYear = input.nextInt();
        
-       Chef.cook();
-       Chef.cook("Beef Steak");
+        unguided2 Calculate;
+        Calculate = new unguided2(birthYear,currentYear);
+        
+        System.out.print("Your age: ");
+        Calculate.calculte();
     }
     
 }
