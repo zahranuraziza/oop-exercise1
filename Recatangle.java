@@ -9,20 +9,19 @@ package com.zahra.unguided5;
  *
  * @author USER
  */
-public class Square {
-    int sisi;
+public class Recatangle {
+    int length, width;
     
-    public Square(int sisi) {
-        this.sisi = sisi;
+    public Recatangle(int length, int width){
+        this.length = length;
+        this.width = width;
+    }  
+    
+    public float area(){
+        return this.length * this.width;
     }
     
-    //@Override
-    public float area() {
-        return this.sisi * this.sisi;
-    }
-    
-    //@Override
     public float circumference(){
-        return this.sisi * 4;
+        return (this.length + this.width)*2;
     }
 }

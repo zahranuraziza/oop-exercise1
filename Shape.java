@@ -3,20 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.zahra.unguided4;
+package com.zahra.unguided5;
 
-/**
- *
- * @author USER
- */
 public class Shape {
-    float area(){
-        System.out.println("Calculate the area");
+   float area(){
+        System.out.println("Calculate the area of shape");
         return 0;
     }
     
     float circumference(){
-        System.out.println("Calculate the circumference");
+        System.out.println("Calculate the circumference of shape");
         return 0;
     }
 }

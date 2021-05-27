@@ -3,37 +3,24 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.zahra.unguided4;
-
-/**
- *
- * @author USER
- */
+package com.zahra.unguided5;
 public class Main {
     public static void main(String[] args) {
-        Shape shape = new Shape();
+     Shape shape = new Shape();
+        Square square = new Square(4);
+        Circle circle = new Circle(50);
+        Recatangle rectangle = new Recatangle(6,5);
         
-        Square square = new Square();
-        square.a = 3;
-        
-        Rectangle rectangle = new Rectangle();
-        rectangle.length = 5;
-        rectangle.width = 6;
-        
-        Circle circle = new Circle();
-        circle.radius = 7;
-        
+        // memanggil method luas dan keliling
         shape.area();
         shape.circumference();
         
-        square.area();
-        square.circumference();
-        
-        rectangle.area();
-        rectangle.circumference();
-        
-        circle.area();
-        circle.circumference();
+        System.out.println("Area of square: " + square.area());
+        System.out.println("Circumference of square: " + square.circumference());
+        System.out.println("Area of circle: " + circle.area());
+        System.out.println("Circumference of circle: " + circle.circumference());
+        System.out.println("Area of rectangle: " + rectangle.area());
+        System.out.println("Circumference of rectangle: " + rectangle.circumference());
+   
     }
-    
 }
