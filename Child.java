@@ -9,13 +9,6 @@ package com.zahra.guided4a;
  *
  * @author USER
  */
-public class Main {
-    public static void main(String[] args) {
-       Child c = new Child();
-       c.talk();
-       c.name = "Merlin";
-       c.talk();
-
-    }
-    
+public class Child extends Parent {
+    // NULL
 }
