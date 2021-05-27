@@ -3,30 +3,37 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.zahra.unguided2;
-
-
-import java.util.Scanner;
+package com.zahra.unguided4;
 
 /**
  *
  * @author USER
  */
 public class Main {
-public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+    public static void main(String[] args) {
+        Shape shape = new Shape();
         
-        System.out.print("Input birth year: ");
-        int birthYear = input.nextInt();
+        Square square = new Square();
+        square.a = 3;
         
-        System.out.print("Input current year: ");
-        int currentYear = input.nextInt();
-       
-        unguided2 Calculate;
-        Calculate = new unguided2(birthYear,currentYear);
+        Rectangle rectangle = new Rectangle();
+        rectangle.length = 5;
+        rectangle.width = 6;
         
-        System.out.print("Your age: ");
-        Calculate.calculte();
+        Circle circle = new Circle();
+        circle.radius = 7;
+        
+        shape.area();
+        shape.circumference();
+        
+        square.area();
+        square.circumference();
+        
+        rectangle.area();
+        rectangle.circumference();
+        
+        circle.area();
+        circle.circumference();
     }
     
 }
